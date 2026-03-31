@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const cors = require("cors");
 
@@ -46,3 +47,7 @@ app.put("/api/orders/:id", (req, res) => {
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
+=======
+const dotenv = require("dotenv");
+dotenv.config();
+>>>>>>> b2b41f2cfa6be165394173ee684565ec3d2b9583
