@@ -1,13 +1,15 @@
-<<<<<<< HEAD
 const express = require("express");
 const cors = require("cors");
+const dotenv = require("dotenv");
+
+dotenv.config(); 
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Backend working ✅");
+  res.send("Backend working ");
 });
 
 // MENU
@@ -47,7 +49,3 @@ app.put("/api/orders/:id", (req, res) => {
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
-=======
-const dotenv = require("dotenv");
-dotenv.config();
->>>>>>> b2b41f2cfa6be165394173ee684565ec3d2b9583
